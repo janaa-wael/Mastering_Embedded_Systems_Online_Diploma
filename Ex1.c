@@ -3,6 +3,7 @@
 
 int main()
 {
+<<<<<<< HEAD
 	int x,y;
 	printf("Enter number 1 : ");
 	scanf(" %d",&x);
@@ -26,3 +27,23 @@ int main()
 	}
 
 }
+=======
+	int n;
+	float x,sum = 0;
+	printf("Enter the number of elements you'll enter : ");
+	scanf(" %d",&n);
+	for(int i = 0 ; i < n ; i++)
+	{
+		printf("\nEnter number %d : ",i+1);
+		scanf(" %f",&x);
+		if(x<0)
+		{
+			n = i;
+			break;
+		}
+		sum += x;
+	}
+	printf("The average of the numbers entered : %.3f",sum/n);
+	
+}
+>>>>>>> 07b513b (Homework 4: Loops & Arrays in C)
